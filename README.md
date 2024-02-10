@@ -23,7 +23,9 @@ Steps:
 1. After cloning it you can open it in VS Code and watch SASS and click on the live button
 
 ## Screenshots
-<img width="945" alt="image" src="<img width="943" alt="image" src="https://github.com/sarvaniK01/GhumoPune/assets/68905086/660f49b2-497e-4f7c-b309-aa85d26f0f0e">
+<img width="943" alt="image" src="https://github.com/sarvaniK01/GhumoPune/assets/68905086/660f49b2-497e-4f7c-b309-aa85d26f0f0e">
+<img width="804" alt="image" src="https://github.com/sarvaniK01/GhumoPune/assets/68905086/57a4354c-6617-42f7-94c8-72d0c8b41d4d">
+<img width="800" alt="image" src="https://github.com/sarvaniK01/GhumoPune/assets/68905086/85cb8bfd-3a24-407e-a406-5e23ebff88d1">
 
 
 
