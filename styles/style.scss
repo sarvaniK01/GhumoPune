@@ -1,0 +1,44 @@
+@import './fonts';
+@import './colors';
+
+@import './navbar';
+@import './hero';
+@import './about';
+@import './places';
+@import './darshan';
+@import './contact';
+@import './footer';
+
+.container{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    position: relative;
+}
+
+// .container{
+//     max-width: 1720px;
+//     margin-left: auto;
+//     margin-right: auto;
+// }
+
+.heading{
+    color: $darkGreen;
+    font-size: 64px;
+    font-family: $spectral;
+    font-weight: 600;
+    text-align: center;
+
+    @include mobile {
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,214 @@
+@import './colors';
+@import './fonts';
+
+#about{
+    padding: 108px 88px;
+    background-color: $beigeBg;
+
+    @include mobile {
+        padding: 68px 48px;
+    }
+
+    @include tablet {
+        padding: 78px 58px;
+    }
+
+    @include laptop {
+        padding: 88px 68px;
+    }
+
+    @include xlLaptop {
+        padding: 98px 78px;
+    }
+
+    @include xlDesktop {
+        padding: 128px 160px;
+    }
+}
+
+.aboutDiv{
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+    margin-top: 4rem;
+    position: relative;
+    flex-direction: row;
+
+    @include mobile {
+        flex-direction: column-reverse;
+        gap: 39px;
+    }
+
+    @include tablet {
+        flex-direction: column-reverse;
+        gap: 90px;
+    }
+
+    @include laptop {
+        flex-direction: column-reverse;
+        gap: 100px;
+    }
+
+    @include xlLaptop {
+        flex-direction: column-reverse;
+        gap: 100px;
+    }
+}
+
+.main-wrapper {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slider-wrapper {
+    width: 626px;
+    height: 626px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+
+    @include mobile{
+        width: 280px;
+        height: 290px;
+    }
+}
+
+.slides {
+    width: 100%;
+    position: absolute;
+    transition: transform .4s ease-in-out;
+}
+
+.slides h1 {
+    position: relative;
+    top: 5rem;
+    left: 1rem;
+    backdrop-filter: blur(7px);
+    padding: 1rem;
+}
+
+.slides img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: .3rem;
+
+    @include mobile{
+        border-radius: 0;
+    }
+}
+
+.slider-btns {
+    position: absolute;
+    top: 45%;
+    z-index: 1;
+    width: 58%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mobile{
+        top:74%;
+        width: 120%;
+    }
+
+    @include tablet {
+        top: 70%;
+        width: 110%;
+    }
+
+    @include laptop {
+        top: 70%;
+        width: 85%;
+    }
+
+    @include xlLaptop {
+        top: 70%;
+        width: 48%;
+    }
+
+    @include xlDesktop {
+        top: 45%;
+        width: 63%;
+    }
+
+    @include xxlDesktop {
+        top: 45%;
+        width: 53%;
+    }
+}
+
+.slider-btns span {
+    cursor: pointer;
+}
+
+.dots {
+    position: absolute;
+    width: 100%;
+    top: 106%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    z-index: 1;
+
+    @include mobile{
+        top: 102%;
+        width: 70%;
+        gap: 0.5rem;
+    }
+
+    @include tablet {
+        top: 102%;
+        width: 70%;
+        gap: 0.5rem;
+    }
+
+    @include laptop {
+        top: 102%;
+    }
+
+    @include xlLaptop {
+        top: 102%;
+    }
+}
+
+.dots .dot {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: $darkGreen;
+    opacity: 0.4;
+    border-radius: 50%;
+    transition: opacity .2s ease-in-out;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#about div p {
+    font-size: 28px;
+    font-family: $lato;
+    margin: auto;
+    text-align: left;
+
+    @include mobile{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    @include tablet {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    @include laptop {
+        text-align: center;
+    }
+
+    @include xlLaptop {
+        text-align: center;
+    }
+}

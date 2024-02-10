@@ -1,0 +1,182 @@
+@import './colors';
+@import './fonts';
+
+#darshan{
+    padding: 8rem 10rem;
+    background-color: $beigeBg;
+
+    @include mobile {
+        padding: 4.25rem 3rem;
+    }
+
+    @include tablet {
+        padding: 78px 58px;
+    }
+
+    @include laptop {
+        padding: 88px 68px;
+    }
+
+    @include xlLaptop {
+        padding: 98px 78px;
+    }
+}
+
+.darshanDiv{
+    display: flex;
+    flex-direction: column;
+
+    @include mobile{
+        flex-direction: column-reverse;
+    }
+
+    @include tablet {
+        flex-direction: column-reverse;
+    }
+
+    @include laptop {
+        flex-direction: column-reverse;
+    }
+    
+    @include xlLaptop {
+        flex-direction: column-reverse;
+    }
+}
+
+.imgDiv{
+    display: flex;
+    flex-direction: row;
+    gap: 95px;
+    margin: 114px auto 92px auto;
+    justify-content: center;
+
+    @include mobile{
+        flex-direction: column;
+        margin: 34px auto 0px auto;
+        gap:22px;
+    }
+
+    @include tablet {
+        flex-direction: column;
+        margin: 34px auto 0px auto;
+        gap: 22px;
+    }
+
+    @include laptop {
+        flex-direction: column;
+        margin: 34px auto 0px auto;
+        gap: 22px;
+    }
+
+    @include xlLaptop {
+        flex-direction: column;
+        margin: 34px auto 0px auto;
+        gap: 22px;
+    }
+}
+
+.imgDiv img{
+    width: 550px;
+    height: 300px;
+
+    @include mobile{
+        width: 300px;
+        height: 173px;
+    }
+}
+
+.textDiv{
+    font-size: 28px;
+    font-family: $lato;
+    line-height: 170%;
+
+    @include mobile{
+        margin-top: 59px;
+        font-size: 16px;
+    }
+
+    @include tablet {
+        margin-top: 59px;
+    }
+
+    @include laptop {
+        margin-top: 60px;
+    }
+
+    @include xlLaptop {
+        margin-top: 65px;
+    }
+}
+
+.textDiv div{
+    margin-bottom: 2rem;
+
+    @include mobile {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.textDiv p {
+    margin-bottom: 2rem;
+
+    @include mobile{
+        margin-bottom: 1rem;
+    }
+}
+
+.boldText{
+    font-size: 32px;
+    font-family: $spectral;
+    font-weight: bold;
+
+    @include mobile{
+        font-size: 18px;
+    }
+}
+
+.bookings{
+    margin-left: 5rem;
+
+    @include mobile {
+        margin-left: 2.5rem;
+    }
+
+    @include tablet {
+        margin-left: 3.5rem;
+    }
+
+    @include laptop {
+        margin-left: 3.5rem;
+    }
+
+    @include xlLaptop {
+        margin-left: 2rem;
+    }
+}
+
+.places{
+    display: grid;
+    margin-left: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+
+    @include mobile{
+        margin-left: 2.5rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    @include tablet {
+        margin-left: 3.5rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    @include laptop {
+        margin-left: 3.5rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    @include xlLaptop {
+        margin-left: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

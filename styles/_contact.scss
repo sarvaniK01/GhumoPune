@@ -1,0 +1,146 @@
+@import './colors';
+@import './fonts';
+
+#contact {
+    padding: 8rem 10rem;
+    background-color: $greenBg;
+
+    @include mobile {
+        padding: 4.25rem 3rem;
+    }
+
+    @include tablet {
+        padding: 78px 58px;
+    }
+
+    @include laptop {
+        padding: 88px 68px;
+    }
+
+    @include laptop {
+        padding: 98px 78px;
+    }
+}
+
+.subtitle{
+    margin-bottom: 73px;
+    font-family: $lato;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 34px;
+
+    @include mobile{
+        font-size: 20px;
+    }
+}
+
+#contact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    gap: 61px;
+
+    @include mobile{
+        width: 100%;
+    }
+
+    @include tablet{
+        width: 90%;
+    }
+
+    @include laptop{
+        width: 70%;
+    }
+
+    @include xlLaptop{
+        width: 90%;
+    }
+
+    @include xlDesktop{
+        width: 80%;
+    }
+
+    @include xxlDesktop{
+        width: 75%;
+    }
+}
+
+#nameField, #emailField{
+    height: 4.5rem;
+    border-radius: 35px;
+    border: transparent;
+    padding-left: 38px;
+    font-size: 20px;
+    font-family: $lato;
+    font-weight: 500;
+    background-color: $white;
+    border: none;
+
+    @include mobile{
+        border-radius: 24px;
+    }
+}
+
+#nameField:focus, #emailField:focus {
+    outline: solid 3px $darkGreen;
+}
+
+#messageField{
+    height: 7.5rem;
+    border-radius: 35px;
+    border: none;
+    padding-left: 38px;
+    font-size: 20px;
+    font-family: $lato;
+    font-weight: 500;
+    padding-top: 25px;
+    background-color: $white;
+    border: none;
+
+    @include mobile {
+        border-radius: 24px;
+    }
+}
+
+#messageField:focus{
+    outline: solid 3px $darkGreen;
+}
+
+#contact button {
+    background-color: $darkGreen;
+    width: 281px;
+    height: 75px;
+    border-radius: 35px;
+    border: none;
+    transition: transform 300ms ease-in-out;
+    position: relative;
+    margin: 0;
+
+    @include mobile {
+        width: 199px;
+        height: 53px;
+        border-radius: 24px;
+        margin: 0 auto;
+    }
+}
+
+#contact button p {
+    font-family: $spectral;
+    color: $white;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+
+    @include mobile {
+        font-size: 1.125rem;
+        top: 13%;
+    }
+}
+
+#contact button:hover {
+    border: solid $beige 3px;
+    transform: scale(1.1);
+}

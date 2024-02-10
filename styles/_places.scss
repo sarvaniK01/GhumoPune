@@ -1,0 +1,259 @@
+@import './colors';
+@import './fonts';
+
+#places {
+    padding: 8rem 10rem;
+    background-color: $greenBg;
+
+    @include mobile {
+        padding: 68px 48px;
+    }
+    
+    @include tablet {
+        padding: 78px 58px;
+    }
+
+    @include laptop {
+        padding: 88px 68px;
+    }
+
+    @include xlLaptop {
+        padding: 98px 78px;
+    }
+}
+
+.tabs{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 3rem auto;
+
+    @include mobile{
+        margin: 53px auto;
+    }
+
+    @include tablet {
+        margin: 53px auto;
+    }
+
+    @include laptop {
+        margin: 53px auto;
+    }
+
+    @include xlLaptop {
+        margin: 53px auto;
+    }
+}
+
+.tabs-inner{
+    display: grid;
+    grid-template-columns: repeat(5, 0fr);
+    justify-content: center;
+}
+
+.tab{
+    background-color: $darkGreen;
+    color: $white;
+    font-family: $spectral;
+    font-size: 42px;
+    border: solid rgba($color: $beigeBg, $alpha: 0.1) 5px;
+    width: 12rem;
+    text-align: center;
+    padding: 0.5rem;
+    vertical-align: center;
+    cursor: pointer;
+    position: relative;
+
+    @include mobile {
+        width: 40px;
+        height: 15px;
+        border: solid rgba($color: $beigeBg, $alpha: 0.1) 4px;
+        font-size: 20px;
+    }
+
+    @include tablet {
+        width: 100px;
+        height: 45px;
+        border: solid rgba($color: $beigeBg, $alpha: 0.1) 4px;
+        font-size: 25px;
+    }
+
+    @include laptop {
+        width: 120px;
+        height: 65px;
+    }
+
+    @include xlLaptop {
+        width: 130px;
+        height: 75px;
+    }
+}
+
+.tab p{
+    @include mobile{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+} 
+
+.tab:hover{
+    border: solid $beige 5px;
+
+    @include mobile{
+        border: solid $beige 4px;
+    }
+
+    @include tablet {
+        border: solid $beige 4px;
+    }
+}
+
+.active{
+    border: solid $beige 5px;
+
+    @include mobile {
+        border: solid $beige 4px;
+    }
+
+    @include tablet {
+        border: solid $beige 4px;
+    }
+}
+
+.content{
+    margin-top: 112px;
+
+    @include mobile{
+        margin-top: 53px;
+    }
+
+    @include tablet {
+        margin-top: 63px;
+    }
+}
+
+
+.placesHeading{
+    text-align: center;
+    color: $black;
+    font-family: $spectral;
+    font-size: 52px;
+    font-weight: 600;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    width: fit-content;
+    margin: 0 auto 77px auto;
+    border-bottom: solid transparent 5px;
+
+    @include mobile{
+        font-size: 23px;
+        margin: 0 auto 28px auto;
+    }
+
+    @include tablet {
+        font-size: 40px;
+        margin: 0 auto 28px auto;
+    }
+}
+
+.placesHeading:hover{
+    border-bottom: solid $darkGreen 5px;
+    transition: all 200ms ease-in-out;
+}
+
+.desc-link{
+    border-bottom: solid transparent 5px;
+    transition: all 150ms ease-in-out;
+    color: $darkGreen;
+}
+
+.desc-link:hover{
+    border-bottom: solid $darkGreen 5px;
+}
+
+.topContent{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 44px;
+    margin-bottom: 0px;
+
+    @include xxlDesktop {
+        flex-direction: row;
+        gap: 153px;
+        margin-bottom: 96px;
+    }
+
+}
+
+.topContent img{
+    width: 634px;
+    height: 634px;
+    margin: 0 auto;
+
+    @include mobile{
+        width: 280px;
+        height: 280px;
+    } 
+
+    @include tablet {
+        width: 550px;
+        height: 550px;
+    }
+}
+
+.rightDescription{
+    margin: auto 0;
+    color: $black;
+}
+
+.rightDescription div{
+    font-family: $lato;
+    font-size: 28px;
+    margin-bottom: 24px;
+
+    @include mobile{
+        font-size: 16px;
+    }
+}
+
+.rightDescription div span:first-child{
+    font-family: $spectral;
+    font-size: 32px;
+    font-weight: bold;
+
+    @include mobile {
+        font-size: 18px;
+    }
+}
+
+a{
+    color: $black;
+    text-decoration: none;
+}
+
+.belowContent div p{
+    font-family: $lato;
+    font-size: 28px;
+    margin-bottom: 30px;
+
+    @include mobile {
+        font-size: 16px;
+    }
+}
+
+.belowContent div span{
+    font-family: $spectral;
+    font-size: 32px;
+    font-weight: bold;
+
+    @include mobile {
+        font-size: 18px;
+    }
+}
+
+
+

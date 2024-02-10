@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GhumoPune - Explore Pune our way!</title>
+    <link rel="icon" type="image/svg" href="./assets/logo.svg">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--************************************HERO SECTION*********************************-->
+    <div id="mobileNav">
+        <div class="topNavDiv">
+            <a href="/"><img src="./assets/logo.svg" alt="logo"></a>
+            <img src="./assets/mobile_icons/menuOpen.svg" alt="menu-icon" class="mobileMenu" onclick="closeNavbar()">
+        </div>
+        <div class="bottomNavDiv">
+            <p onclick="closeNavbar()"><a href="#home">Home</a></p>
+            <p onclick="closeNavbar()"><a href="#about">About</a></p>
+            <p onclick="closeNavbar()"><a href="#places">Top 10 places</a></p>
+            <p onclick="closeNavbar()"><a href="#darshan">Pune Darshan</a></p>
+            <p onclick="closeNavbar()"><a href="#contact">Contact</a></p>
+        </div>
+    </div>
+    <section id="home">
+        <!--**********************************NAVBAR********************************* -->
+        <nav class="container">
+            <a href="/"><img src="./assets/logo.svg" alt="logo"></a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#places">Top 10 places</a></li>
+                <li><a href="#darshan">Pune Darshan</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <img src="./assets/mobile_icons/menuClosed.svg" alt="menu-icon" class="mobileMenu" onclick="openNavbar()">
+        </nav>
+        
+        <div class="container">
+            <div class="hero">
+                <h1>Welcome to GhumoPune</h1>
+                <p>Looking to explore Pune? Look no further! We've curated a list of the top 10 places to make your trip memorable.</p>
+                <a href="#places">
+                    <button>
+                        <p>Take me there</p>
+                    </button>
+                </a>
+            </div>
+        </div>
+        
+    </section>
+    <!--*************************************ABOUT***************************************-->
+    <section id="about">
+        <p class="heading">About pune</p>
+        <div class="aboutDiv container">
+            <div class="main-wrapper">
+                <div class="slider-btns">
+                    <span id="prev-btn">
+                        <img id="leftArrow" class="leftArrow" src="./assets/mobile_icons/left_arrow.svg" alt="left-arrow">
+                    </span>
+                    <span id="next-btn">
+                        <img id="rightArrow" class="rightArrow" src="./assets/mobile_icons/right_arrow.svg" alt="right-arrow">
+                    </span>
+                </div>
+                <div class="slider-wrapper">
+                    <div class="slides">
+                        <img class="slide" src="./assets/about/swaminarayan_temple.png" alt="temple">
+                    </div>
+                    <div class="slides">
+                        <img class="slide" src="./assets/about/mandai.png" alt="mandai">
+                    </div>
+                    <div class="slides">
+                        <img class="slide" src="./assets/about/dhol_tasha.png" alt="dhol-tasha">
+                    </div>
+                    <div class="slides">
+                        <img class="slide" src="./assets/about/iskcon_temple.png" alt="iskcon">
+                    </div>
+                    <div class="slides">
+                        <img class="slide" src="./assets/about/it_park.png" alt="it-park">
+                    </div>
+                    <div class="slides">
+                        <img class="slide" src="./assets/about/lalmahal.png" alt="lalmahal">
+                    </div>
+                    <div class="slides">
+                        <img class="slide" src="./assets/about/sppu.png" alt="sppu">
+                    </div>
+                </div>
+                <div class="dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+
+            <p>Pune, located in Maharashtra, is a flourishing metropolis and one of the most liveable cities in India. The city is
+            renowned for its prestigious educational institutions and is also known as the Oxford of the East. Pune successfully
+            blends history and modernity, with a touch of colonial-era grandeur. It preserves the roots of Maratha culture in its
+            traditions, monuments, and daily life, making it Maharashtra's cultural capital. You can plan an enjoyable trip to Pune
+            with your family, friends, or colleagues, selecting the sightseeing spots and activities that suit your preferences and
+            interests.
+            </p>
+        </div>
+        
+    </section>
+    <!--************************************PLACES***************************************-->
+    <section id="places">
+        <p class="heading">Top 10 places</p>
+        <div class="tabs container">
+            <div class="tabs-inner">
+                <div id="defaultOpen" class="tab" onclick="displayContent(event,'1')">
+                    <p>1</p>
+                </div>
+                <div class="tab" onclick="displayContent(event,'2')">
+                    <p>2</p>
+                </div>
+                <div class="tab" onclick="displayContent(event,'3')">
+                    <p>3</p>
+                </div>
+                <div class="tab" onclick="displayContent(event,'4')">
+                    <p>4</p>
+                </div>
+                <div class="tab" onclick="displayContent(event,'5')">
+                    <p>5</p>
+                </div>
+            </div>
+            <div class="tabs-inner">
+                <div class="tab" onclick="displayContent(event,'6')">
+                    <p>6</p>
+                </div>
+                <div class="tab" onclick="displayContent(event,'7')">
+                    <p>7</p>
+                </div>
+                <div class="tab" onclick="displayContent(event,'8')">
+                    <p>8</p>
+                </div>
+                <div class="tab" onclick="displayContent(event,'9')">
+                    <p>9</p>
+                </div>
+                <div class="tab" onclick="displayContent(event,'10')">
+                    <p>10</p>
+                </div>
+            </div>
+        </div>
+        <div class="content container">
+            <!--********************************************1***********************************************************-->
+            <div id="1" class="1 desc">
+                <p class="placesHeading"><a href="https://www.dagdushethganpati.com/" aria-label="website" target="_blank">1.Daguduseth Temple</a></p>
+                
+                <div class="topContent">
+                    <img src="./assets/top_10_places/1_daguduseth.png" alt="place1">
+                    <div class="rightDescription">
+                        <div>
+                            <a class="desc-link" href="https://shorturl.at/ouvBM" aria-label="location-link" target="_blank">
+                                <span>Location: </span>
+                                <span>Ganpati Bhavan, 250, Chhatrapati Shivaji Maharaj Rd, Mehunpura, Budhwar Peth, Pune,
+                                Maharashtra 411002</span>
+                            </a>
+                        </div>
+                        <div>
+                            <span>How to reach: </span>
+                            <span>Via an Auto or Cab</span>
+                        </div>
+                        <div>
+                            <span>Timings: </span>
+                            <span>6 A.M -11 P.M.</span>
+                        </div>
+                        <div>
+                            <span>entry fee: </span>
+                            <span>Free Entry (100Rs Special Darshan)</span>
+                        </div>
+                        <div>
+                            <span>Restrictions: </span>
+                            <span>Leather items, electronic devices, weapons or sharp objects,
+                            non-vegetarian food, and alcohol, or smoke are prohibited
+                            within Dagdusheth Temple.</span>
+                        </div>
+                        <div>
+                            <span>Required Time: </span>
+                            <span>2 to 3 hours (approx.)</span>
+                        </div>
+                        <div>
+                            <span>places nearby: </span>
+                            <span>
+                                <a class="desc-link" href="https://shorturl.at/dxJ49" target="_blank">
+                                    Tulsibaug market</a>
+                                    , <a class="desc-link" href="https://shorturl.at/msT24" target="_blank">Nana wada</a>
+                                </span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="belowContent">
+                    <div>
+                        <span>About: </span>
+                        <p>The Dagdusheth Temple, also known as the Shreemant Dagdusheth Halwai Ganpati Temple, is a famous Hindu
+                        temple located in
+                        Pune, Maharashtra. This temple is dedicated to Lord Ganesha, who is worshipped for his ability to remove
+                        obstacles and
+                        bestow blessings. As one of Maharashtra's most beloved Ganesh shrines, it holds a special place in the
+                        hearts of its
+                        faithful visitors.</p>
+                    </div>
+                    <div>
+                        <span>History: </span>
+                        <p>The temple was founded on February 19, 1893, by Shreemant Dagdusheth Halwai and his wife, Lakshmibai.
+                        Halwai, who was a
+                        famous wrestler & sweet vendor by profession, was a devout follower of Lord Ganesha. The temple is dedicated
+                        to their
+                        son, who passed away. It was one of the first to participate in a public celebration of Ganesh Chaturthi
+                        initiated by
+                        Indian nationalist leader Lokmanya Tilak. Today, it is one of the five manache Ganpatis of Pune and attracts
+                        a large
+                        number of devotees every day, especially during the 10-day Ganesh Chaturthi festival. It stands as a
+                        testament to faith,
+                        devotion, and reverence.</p>
+                    </div>
+                    <div>
+                        <span>More: </span>
+                        <p>Dagdusheth Temple is known for its stunning idol of Lord Ganesha, which is 2.2 m tall and 1.8 m wide. The
+                        temple is
+                        particularly lively during Ganesh Chaturthi, with colorful decorations, music, and processions. The design
+                        of the temple
+                        blends traditional and contemporary elements, featuring intricate carvings, vibrant frescoes, and beautiful
+                        ornaments.
+                        Facilities include Puja and aarti, donations and annadan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--********************************************2***********************************************************-->
+            <div id="2" class="2 desc">
+               <p class="placesHeading"><a href="https://pune.gov.in/tourist-place/shaniwarwada/" aria-label="website" target="_blank">2.Shaniwar wada</a></p> 
+                <div class="topContent">
+                    <img src="./assets/top_10_places/2_shaniwarwada.jpg" alt="place1">
+                    <div class="rightDescription">
+                        <div>
+                            <a class="desc-link" href="https://shorturl.at/epxBZ" aria-label="location-link" target="_blank">
+                                <span>Location: </span>
+                                <span>Shaniwar Peth, Pune, Maharashtra 411030</span>
+                            </a>
+                        </div>
+                        <div>
+                            <span>How to reach: </span>
+                            <span>Via an Auto or Cab</span>
+                        </div>
+                        <div>
+                            <span>Timings: </span>
+                            <span>8 A.M – 6:30 P.M</span>
+                        </div>
+                        <div>
+                            <span>entry fee: </span>
+                            <span>
+                                <ul>
+                                    <li>INR 5 for Indian nationals</li>
+                                    <li>INR 125 for foreign nationals</li>
+                                    <li>INR 25 for light & sound show</li>
+                                </ul>
+                            </span>
+                            
+                        </div>
+                        <div>
+                            <span>Restrictions: </span>
+                            <span>Large bags and luggage, Food and beverages</span>
+                        </div>
+                        <div>
+                            <span>Required Time: </span>
+                            <span>2 to 3 hours (approx.)</s>
+                        </div>
+                        <div>
+                            <span>places nearby: </span>
+                            <span>
+                                <a class="desc-link" href="https://shorturl.at/dpFY4" aria-label="location-link" target="_blank">
+                                    Shree Omkareshwar Temple
+                                </a>, 
+                                <a class="desc-link" href="https://rb.gy/idzdv7" aria-label="location-link" target="_blank">
+                                    Vishram Bagh Waada Palace
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+            
+                </div>
+                <div class="belowContent">
+                    <div>
+                        <span>About: </span>
+                        <p>Shaniwarwada is a 286-year-old grand mansion located in Pune. Built by Peshwa Bajirao I, it was the residence of the
+                        Peshwas and covers 625 acres. Although most of the Wada was destroyed by fire in 1828, it still features beautiful
+                        architecture, including five gates, nine bastions, and fountains. The light and sound show held every evening narrates
+                        the history of the Peshwas and the Maratha Empire.</p>
+                    </div>
+                    <div>
+                        <span>History: </span>
+                        <p>Bajirao I, Peshwa to Maratha ruler Chhatrapati Sahu, initiated the 18th-century construction of Shaniwar Wada, initially
+                        planned as a 7-story stone marvel. Public resistance emerged due to objections about the king's exclusive authority over
+                        stone palaces. Responding to the outcry, construction changed to brick for the remaining floors. Shaniwar Wada later
+                        faced a British Artillery attack, leading to the collapse of six stories, leaving only the enduring stone base. In 1828,
+                        a week-long mysterious fire razed the palace, leaving behind granite ramparts and resilient teak gateways. A dark
+                        episode unfolded in 1773 when the fifth Peshwa, Narayanrao, was murdered, and legends persist of his ghost's cries for
+                        help on full moon nights.</p>
+                        </d>
+                        <div>
+                            <span>More: </span>
+                            <p>The optimal period for a Shaniwar Wada visit falls between October and February, offering delightful weather that is
+                            ideal for leisurely exploration of the palace grounds. Explore in the evening hours to experience the captivating light
+                            and sound show experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--********************************************3***********************************************************-->
+            <div id="3" class="3 desc">
+                <p class="placesHeading"><a href="https://pune.gov.in/tourist-place/khadakwasala-dam/" aria-label="website" target="_blank">3.Khadakwasla dam</a></p>
+                <div class="topContent">
+                    <img src="./assets/top_10_places/3_khadakwasla.png" alt="place3">
+                    <div class="rightDescription">
+                        <div>
+                            <a class="desc-link" href="http://tinyurl.com/ytdh3t9s" aria-label="location-link" target="_blank">
+                                <span>Location: </span>
+                                <span>Near Sinhagad Fort, Pune, Maharashtra, 411023, India</span>
+                            </a>
+                        </div>
+                        <div>
+                            <span>How to reach: </span>
+                            <span>Via an Cab or Bus</span>
+                        </div>
+                        <div>
+                            <span>Timings: </span>
+                            <span>6 A.M - 6 P.M.</span>
+                        </div>
+                        <div>
+                            <span>entry fee: </span>
+                            <span>Free Entry</span>
+                        </div>
+                        <div>
+                            <span>Restrictions: </span>
+                            <span>No restrictions regarding items. Tourists are no allowed to enter from the water side of the dam.</span>
+                        </div>
+                        <div>
+                            <span>Required Time: </span>
+                            <span>1 to 2 hours</span>
+                        </div>
+                        <div>
+                            <span>places nearby: </span>
+                            <span>
+                                <a class="desc-link" href="http://tinyurl.com/ab2dfy2j" target="_blank">Taljai Hills</a>, 
+                                <a class="desc-link" href="http://tinyurl.com/3dkvkmzt" target="_blank">Panshet Dam</a>
+                            </span>
+                        </div>
+                    </div>
+            
+                </div>
+                <div class="belowContent">
+                    <div>
+                        <span>About: </span>
+                        <p>Khadakwasla Dam, a celebrated Pune attraction, spans the vital River Mutha, supplying water to the city. Creating
+                        Khadakwasla Lake, it's a favored getaway and picnic spot close to Pune City, with popular cycling routes. Monsoons
+                        enhance its allure, drawing visitors to witness the landscape's transformation. Extending 1.6 kilometers over the River
+                        Mutha, the dam is a water management hub with a vast reservoir area of 22,000 square kilometers, standing over 31 meters
+                        tall on the sturdy Mutha riverbed, attracting both enthusiasts and those seeking scenic exploration.</p>
+                    </div>
+                    <div>
+                        <span>History: </span>
+                        <p>Constructed in the 19th century, Khadakwasla Dam in Pune was a response to East Pune's severe drought, masterminded by
+                        Captain Fife Re of the British army. The project, initiated in 1869 and overseen by Captain Fife Re, culminated in the
+                        completion of the dam by 1879. Initially named Fife Lake in honor of the planner, it retained this title until 1947.
+                        Unfortunately, the original dam succumbed to floods in 1961, prompting its swift reconstruction to address the
+                        persisting water crisis.</p>
+                    </div>
+                    <div>
+                        <span>More: </span>
+                        <p>Experience the best of Khadakwasla Dam and Chowpatty during the lush monsoon (July–August) or the pleasant winter months
+                        (November–February) when vibrant greenery surrounds the landscape. You can plan a picnic with your family and camping
+                        during the weekends too. Evenings offer a picturesque view, and weekdays provide a serene, solitary atmosphere for a
+                        tranquil visit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--********************************************4***********************************************************-->
+            <div id="4" class="4 desc">
+                <p class="placesHeading"><a href="https://pune.gov.in/tourist-place/sarasbaug-peshve-park/" aria-label="website" target="_blank">4.Sarasbaug</a></p>
+                <div class="topContent">
+                    <img src="./assets/top_10_places/4_sarasbaug.png" alt="place4">
+                    <div class="rightDescription">
+                        <div>
+                            <a class="desc-link" href="http://tinyurl.com/mt53btvf" aria-label="location-link" target="_blank">
+                                <span>Location: </span>
+                                <span>Saras Baug, Saras Baug Rd, Municipal Colony, Pune, Maharashtra, 411038, India</span>
+                            </a>
+                        </div>
+                        <div>
+                            <span>How to reach: </span>
+                            <span>Via an Auto or Cab</span>
+                        </div>
+                        <div>
+                            <span>Timings: </span>
+                            <span>6 A.M - 9 P.M.</span>
+                        </div>
+                        <div>
+                            <span>entry fee: </span>
+                            <span>Free Entry</span>
+                        </div>
+                        <div>
+                            <span>Restrictions: </span>
+                            <span>No restrictions</span>
+                        </div>
+                        <div>
+                            <span>Required Time: </span>
+                            <span>1 to 2 hours</span>
+                        </div>
+                        <div>
+                            <span>places nearby: </span>
+                            <span>
+                                <a class="desc-link" href="http://tinyurl.com/ju68x3k7" target="_blank">Parvati Hills</a>,
+                                <a class="desc-link" href="http://tinyurl.com/yery7na8" target="_blank">Shree Mahalaxmi Temple</a>,
+                                <a class="desc-link" href="http://tinyurl.com/3cycznya" target="_blank">Darshan Museum</a>,
+                                <a class="desc-link" href="http://tinyurl.com/4jhr68ee" target="_blank">Seven wonders dream park.</a>
+                            </span>
+                        </div>
+                    </div>
+            
+                </div>
+                <div class="belowContent">
+                    <div>
+                        <span>About: </span>
+                        <p>SarasBaug, a prominent Pune attraction, emerged from a dried-up lake at Parvati's foothills, evolving into a 25-acre
+                        park with a central Lord Ganesh temple, known as Talyatla Ganpati. Rooted in Peshwa history, the park boasts
+                        well-maintained lawns and pathways, providing a serene ambiance. Visitors can explore while maintaining cleanliness and
+                        delve into the temple's historical significance. Nestled at Parvati's foothills, Saras Baug offers a tranquil retreat
+                        for locals, complemented by a small museum dedicated to Lord Ganesha, enhancing its cultural allure.</p>
+                    </div>
+                    <div>
+                        <span>History: </span>
+                        <p>Built in the 20th century around a mid-18th-century Ganesh Temple, Saras Baug in Pune originated around a lake.
+                        Nanasaheb Peshwe envisioned this Ganesh Temple, with construction spanning from 1750 to 1784. From the 18th to the 19th
+                        century, the temple served as a strategic meeting point for Marathas, who conducted military discussions against the
+                        British and Nizams. Boats, navigated by Native Africans for privacy, carried Marathas to the temple in the middle of the
+                        lake for confidential talks.</p>
+                    </div>
+                    <div>
+                        <span>More: </span>
+                        <p>The best time to visit Saras Baug is from October to February. The prominence of ‘sarus’ cranes in the garden is the
+                        primary reason why the place is called today.Previously housing a zoo called Peshwe Park, the species have been
+                        relocated to Rajeev Gandhi Zoological Park in Katraj. Saras Baug offers delightful picnic spots, making it an ideal
+                        destination for families and loved ones to enjoy.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--********************************************5***********************************************************-->
+            <div id="5" class="5 desc">
+                <p class="placesHeading"><a href="https://pune.gov.in/tourist-place/aagakhan-palace/" aria-label="website" target="_blank">5.aga khan palace</a></p>
+                
+                <div class="topContent">
+                    <img src="./assets/top_10_places/5_agaKhanPalace.png" alt="place4">
+                    <div class="rightDescription">
+                        <div>
+                            <a class="desc-link" href="http://tinyurl.com/4f9fycfk" aria-label="location-link" target="_blank">
+                                <span>Location: </span>
+                                <span>Nagar Road, Kalyani Nagar, Pune, Maharashtra, 411014, India</span>
+                            </a>
+                        </div>
+                        <div>
+                            <span>How to reach: </span>
+                            <span>Via an Auto or Cab</span>
+                        </div>
+                        <div>
+                            <span>Timings: </span>
+                            <span>9 A.M - 5:30 P.M.</span>
+                        </div>
+                        <div>
+                            <span>entry fee: </span>
+                            <span>Rs. 5 for Indians, Rs. 100 for foreigners (per person)</span>
+                        </div>
+                        <div>
+                            <span>Restrictions: </span>
+                            <span>No shorts or sleeveless tops allowed. Knees and shoulders must be covered for both men and women.</span>
+                        </div>
+                        <div>
+                            <span>Required Time: </span>
+                            <span>3 to 4 hours</span>
+                        </div>
+                        <div>
+                            <span>places nearby: </span>
+                            <span>
+                                <a class="desc-link" href="http://tinyurl.com/ynrm9pkr" target="_blank">Phoenix Mall</a>,
+                                <a class="desc-link" href="http://tinyurl.com/4ns558bh" target="_blank">Kasturba Gandhi Memorial</a>,
+                                <a class="desc-link" href="http://tinyurl.com/mufxu93m" target="_blank">National War Museum</a>,
+                                <a class="desc-link" href="http://tinyurl.com/zvbcm6wp" target="_blank">Tribal Cultural Museum.</a>
+                            </span>
+                        </div>
+                    </div>
+            
+                </div>
+                <div class="belowContent">
+                    <div>
+                        <span>About: </span>
+                        <p>Aga Khan Palace, a popular Pune tourist spot, was constructed in 1892 by Sultan Mohammad Shah Aga Khan to aid
+                        famine-affected people in Maharashtra. Spanning 1756 sq. meters, the palace took 5 years to complete and holds immense
+                        historical significance in India's independence movement. Serving as a prison for Mahatma Gandhi, Kasturba Gandhi,
+                        Sarojini Naidu, and Mahadev Desai, it is both architecturally excellent and historically important. Now the headquarters
+                        of the Gandhi National Memorial Society, the palace spans 19 acres, and khadi production remains a key activity on the
+                        premises.</p>
+                    </div>
+                    <div>
+                        <span>History: </span>
+                        <p>Aga Khan Palace, deeply entwined with Mahatma Gandhi's history, housed him, his wife Kasturba, and secretary Mahadev
+                        Desai during their internment from 1942 to 1944. Tragically, both Kasturba and Mahadev Desai passed away during this
+                        period, and their Samadhis are located within the palace. Donated by Aga Khan in 1969 to honor Gandhi, the palace
+                        received support from Prime Minister Indira Gandhi in 1974, with yearly maintenance funds increasing to INR 1,000,000.
+                        Memorials for Mahatma and Kasturba Gandhi further enrich the historical significance of this site.</p>
+                    </div>
+                    <div>
+                        <span>More: </span>
+                        <p>Aga Khan Palace enchants with vast lawns, five halls adorned with Italian arches, and two floors spanning 1080 sq.
+                        meters and 445 sq. meters. Encircled by a 2.5-meter corridor, the palace hosts annual public functions, including
+                        Martyr's Day, Maha Shivratri, Mother's Day (Kasturba Gandhi's Death anniversary), Independence Day, Republic Day, and
+                        Mahatma Gandhi's birth anniversary, organized by the Gandhi Memorial Society.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--********************************************6***********************************************************-->
+            <div id="6" class="6 desc">
+                <p class="placesHeading"><a href="http://tinyurl.com/mrx237yu" aria-label="website" target="_blank">6.Okayama friendship garden</a></p>
+                
+                <div class="topContent">
+                    <img src="./assets/top_10_places/6_okayama.png" alt="place4">
+                    <div class="rightDescription">
+                        <div>
+                            <a class="desc-link" href="http://tinyurl.com/3hbzeupk" aria-label="location-link" target="_blank">
+                                <span>Location: </span>
+                                <span>Sinhgad Rd, Pune Okayama Friendship Garden, Dattawadi, Pune, Maharashtra, 411030, India.</span>
+                            </a>
+                        </div>
+                        <div>
+                            <span>How to reach: </span>
+                            <span>Via an Auto or Cab</span>
+                        </div>
+                        <div>
+                            <span>Timings: </span>
+                            <span>6 A.M - 10:30 A.M & 4 P.M - 8 P.M</span>
+                        </div>
+                        <div>
+                            <span>entry fee: </span>
+                            <span>Rs. 5 for adults & children above 3 yrs</span>
+                        </div>
+                        <div>
+                            <span>Restrictions: </span>
+                            <span>No picnics or walks inside the lawn, photography needs permission, No food from outside.</span>
+                        </div>
+                        <div>
+                            <span>Required Time: </span>
+                            <span>2 to 3 hours</span>
+                        </div>
+                        <div>
+                            <span>places nearby: </span>
+                            <span>
+                                <a class="desc-link" href="http://tinyurl.com/2etabu3b" target="_blank">Blades of Glory Cricket Museum</a>,
+                                <a class="desc-link" href="http://tinyurl.com/yb8k27zs" target="_blank">Joshi's Museum Of Miniature Railways</a>,
+                                <a class="desc-link" href="http://tinyurl.com/23sffet8" target="_blank">Devishri Ram Ambika Mandir</a>,
+                                <a class="desc-link" href="http://tinyurl.com/2p8rtn79" target="_blank">Shri Swaminarayan Mandir.</a>
+                            </span>
+                        </div>
+                    </div>
+            
+                </div>
+                <div class="belowContent">
+                    <div>
+                        <span>About: </span>
+                        <p>Pune's Japanese Garden, the largest outside Japan, named Pune Okayama Friendship Garden or Pu. La. Deshpande Udyan,
+                        celebrates Marathi writer Pu La Deshpande. Situated on Sinhagad Road, it harmoniously combines nature and concrete with
+                        canals, ponds, waterfalls, lush greenery, pergolas, vibrant flowers, and artificial hills. Reflecting Japanese Yin and
+                        Yang theory, it offers a serene ambiance, inviting visitors for a calming stroll or exploration of its diverse flora.</p>
+                    </div>
+                    <div>
+                        <span>History: </span>
+                        <p>In 1998, Pune's Mayor Dattatreya Gaikwad initiated a "sister city" bond with Berman, leading to eight global cities,
+                        including Okayama in Japan, forming similar ties with Pune. The Okayama Friendship Garden, also named Pu. La. Deshpande
+                        Udayan, symbolizes the Indo-Japanese friendship, drawing inspiration from Okayama's renowned Korakuen Garden. Created
+                        under sister city initiatives, the garden pays homage to Marathi writer Purushottam Laxman Deshpande, known as Pu La
+                        Deshpande, reflecting traditional Japanese culture's emphasis on gardens for peace, meditation, and spiritual practices
+                        to foster a peaceful and cultural relationship between the two countries.</p>
+                    </div>
+                    <div>
+                        <span>More: </span>
+                        <p>Amid lush greenery, Pune's Okayama Friendship Garden showcases lion statues at the entrance embodying Yin and Yang
+                        forces. Inside, Japanese garden elements, including water features and stone lanterns, complement diverse flora. The
+                        unique touch of "Kasan" mountains crafted with wood, stones, and ceramic enhances the garden's overall beauty; it also
+                        served as a filming location for Salman Khan's "Bodyguard" movie.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--********************************************7***********************************************************-->
+            <div id="7" class="7 desc">
+                <p class="placesHeading"><a href="https://www.rajakelkarmuseum.org/" aria-label="website" target="_blank">7.raja dinkar kelkar museum</a></p>
+                
+                <div class="topContent">
+                    <img src="./assets/top_10_places/7_kelkar.png" alt="place4">
+                    <div class="rightDescription">
+                        <div>
+                            <a class="desc-link" href="http://tinyurl.com/2zhfd76p" aria-label="location-link" target="_blank">
+                                <span>Location: </span>
+                                <span>No. 1377/78, Kamal Kunj, Bajirao Rd, Natu Baag, Shukrawar Peth, Pune, Maharashtra 411002.</span>
+                            </a>
+                        </div>
+                        <div>
+                            <span>How to reach: </span>
+                            <span>Via an Auto or Cab</span>
+                        </div>
+                        <div>
+                            <span>Timings: </span>
+                            <span>10 A.M - 5:30 P.M.</span>
+                        </div>
+                        <div>
+                            <span>entry fee: </span>
+                            <span>
+                                <ul>
+                                    <li>30 Rs (below 12yrs); 100 Rs (adults)</li>
+                                    <li>100 Rs (below 12yrs); 300 Rs (adults) for Foreigners</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div>
+                            <span>Restrictions: </span>
+                            <span>Additional fee for photography.</span>
+                        </div>
+                        <div>
+                            <span>Required Time: </span>
+                            <span>1 to 2 hours</span>
+                        </div>
+                        <div>
+                            <span>places nearby: </span>
+                            <span>
+                                <a class="desc-link" href="http://tinyurl.com/4apz9vmj" target="_blank">Bharat Natya Sanshoodan Mandir</a>,
+                                <a class="desc-link" href="http://tinyurl.com/46bbp8pu" target="_blank">Jangali Maharaj Mandir</a>.
+                            </span>
+                        </div>
+                    </div>
+            
+                </div>
+                <div class="belowContent">
+                    <div>
+                        <span>About: </span>
+                        <p>Situated on Bajirao Road in Shukrawar Peth, the Raja Dinkar Museum, established in 1962 by Baba Dinkar Kelkar, pays
+                        tribute to his late son. Managed by the Department of Archaeology, Government of Maharashtra, this three-story museum
+                        showcases a vast collection of 15,000 items, including Mughal lamps, musical instruments, Ganpati's guns, intricate
+                        carvings, pottery, and paintings depicting scenes from the Ramayana. The extensive assortment, gathered over 40 years,
+                        features valuables from the 17th century Mughal and Maratha empires, offering a rich cultural experience for visitors.</p>
+                    </div>
+                    <div>
+                        <span>History: </span>
+                        <p>In 1962, museum management transitioned to the government, unveiling an initial collection of 20,000 exhibits, now
+                        narrowed to 15,000 on display. Notable features include miniature statues of Lord Ganesha, Lord Shiva, and Goddess
+                        Parvati. The highlight remains the vibrant replica of Mastani Mahal, built in 1734, exuding grandeur with elaborate
+                        chandeliers, artistic decor, gorgeous paintings, and a regal ambiance akin to a royal palace.</p>
+                    </div>
+                    <div>
+                        <span>More: </span>
+                        <p>A notable attraction at Raja Dinkar Kelkar Museum is the replica of Mastani Mahal, constructed in 1734. Adorned with
+                        opulent decor, grand chandeliers, and artistic paintings, the room mirrors the regal ambiance of a palace. Additionally,
+                        the museum houses Research and Storage facilities, along with the Institute of Musicology and Fine Arts within its
+                        premises.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--********************************************7***********************************************************-->
+            <div id="8" class="8 desc">
+                <p class="placesHeading"><a href="https://pune.gov.in/tourist-place/sinhagad/" aria-label="website" target="_blank">8.sinhagad fort</a></p>
+                
+                <div class="topContent">
+                    <img src="./assets/top_10_places/8_sinhagad.png" alt="place4">
+                    <div class="rightDescription">
+                        <div>
+                            <a class="desc-link" href="http://tinyurl.com/2bu7vfvr" aria-label="location-link" target="_blank">
+                                <span>Location: </span>
+                                <span>Sinhagad Ghat Rd, Thoptewadi, Pune, Maharashtra, 411025, India.</span>
+                            </a>
+                        </div>
+                        <div>
+                            <span>How to reach: </span>
+                            <span>Via Bus or Cab</span>
+                        </div>
+                        <div>
+                            <span>Timings: </span>
+                            <span>5 A.M - 6 P.M.</span>
+                        </div>
+                        <div>
+                            <span>entry fee: </span>
+                            <span>No entry fee</span>
+                        </div>
+                        <div>
+                            <span>Restrictions: </span>
+                            <span>No restrictions</span>
+                        </div>
+                        <div>
+                            <span>Required Time: </span>
+                            <span>2 to 3 hours</span>
+                        </div>
+                        <div>
+                            <span>places nearby: </span>
+                            <span>
+                                <a class="desc-link" href="http://tinyurl.com/bdddaxfs" target="_blank">Kaundinyeshwar Temple</a>,
+                                Local food stalls.
+                            </span>
+                        </div>
+                    </div>
+            
+                </div>
+                <div class="belowContent">
+                    <div>
+                        <span>About: </span>
+                        <p>Situated in the Sahyadri Mountains, Sinhagad Fort, formerly Kondhana, is historically significant, notably for the 1670
+                        Battle of Sinhagad. Meaning Lion's Fort, it stands over 750 meters, strategically placed among Maratha forts. Popular
+                        among trekkers, photographers, and nature enthusiasts, the fort offers a quick getaway, once visited by figures like Bal
+                        Gangadhar Tilak and Mahatma Gandhi. Despite restrictions, embracing the dilapidated yet striking structure and scenic
+                        surroundings ensures a memorable experience.</p>
+                    </div>
+                    <div>
+                        <span>History: </span>
+                        <p>The Kaundinyeshwar Temple carvings suggest Sinhagad Fort's age of around 2000 years, also known as Kondhana Killa due to
+                        sage Kaundinya's meditation. Initially ruled by Koli king Nag Naik until 1328, it fell to Turkish invader Muhammad bin
+                        Tughlaq. Shahaji, a Maratha commander, later managed it, and Shivaji secured control in 1647 but returned it for his
+                        father's release. Shivaji recaptured it in 1656, enduring battles with the Mughals, including the pivotal 1670 battle
+                        led by Tanaji Mulasare. Maratha-Mughal conflicts persisted until the British claimed the fort in 1818.</p>
+                    </div>
+                    <div>
+                        <span>More: </span>
+                        <p>Perched atop the Sahyadri mountains on a plateau with steep natural defenses, Sinhagad Fort sits at an elevation of over
+                        1300 meters, around 750 meters above the mountain's base. The well-preserved main ramparts and ancient stone stairways
+                        lead to the Pune Darwaza (northeast) and Kalyan Darwaza (southeast), the fort's imposing entrance gates. Within the
+                        complex, notable features include the Kaundinyeshwar Temple, the tomb of Chhatrapati Rajaram, and the memorial of Tanaji
+                        Malusare, along with rock caves and other historic structures.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--********************************************7***********************************************************-->
+            <div id="9" class="9 desc">
+                <p class="placesHeading"><a href="https://www.karlacaves.com/" aria-label="website" target="_blank">9.karla caves</a></p>
+                
+                <div class="topContent">
+                    <img src="./assets/top_10_places/9_karla.png" alt="place4">
+                    <div class="rightDescription">
+                        <div>
+                            <a class="desc-link" href="http://tinyurl.com/42fye9xp" aria-label="location-link" target="_blank">
+                                <span>Location: </span>
+                                <span>QFMC+858, Karla, Ekvira devi road, Lonavala, Maharashtra 410405.</span>
+                            </a>
+                        </div>
+                        <div>
+                            <span>How to reach: </span>
+                            <span>Via a Cab</span>
+                        </div>
+                        <div>
+                            <span>Timings: </span>
+                            <span>9 A.M - 5 P.M.</span>
+                        </div>
+                        <div>
+                            <span>entry fee: </span>
+                            <span>25 Rs for Indians; 300 Rs for Foreigners</span>
+                        </div>
+                        <div>
+                            <span>Restrictions: </span>
+                            <span>Flash photography is usually not allowed as it can damage the artwork.</span>
+                        </div>
+                        <div>
+                            <span>Required Time: </span>
+                            <span>3 hours</span>
+                        </div>
+                        <div>
+                            <span>places nearby: </span>
+                            <span>
+                                <a class="desc-link" href="http://tinyurl.com/bdf3knbr" target="_blank">Bhaja caves</a>,
+                                <a class="desc-link" href="http://tinyurl.com/5kt5pztd" target="_blank">Ekvira Devi Temple</a>,
+                                <a class="desc-link" href="http://tinyurl.com/5xzz3tjk" target="_blank">Sunil's Celebrity Wax Museum</a>.
+                            </span>
+                        </div>
+                    </div>
+            
+                </div>
+                <div class="belowContent">
+                    <div>
+                        <span>About: </span>
+                        <p>Karla Caves, near Lonavala, stand as ancient Buddhist rock-cut sanctuaries, renowned for hosting one of India's largest
+                        Chaityas (prayer halls with a stupa). Formerly known as Veluraka, the site boasts a colossal 15-meter pillar and the
+                        Ekvira Temple dedicated to Goddess Ekveera. Housing a Buddhist monastery dating back to the 2nd century BC, Karla Caves
+                        also reveal an ancient trade route leading from the Arabian Sea into the Deccan. Accessible after climbing approximately
+                        150 stairs, these caves offer a captivating journey into history.</p>
+                    </div>
+                    <div>
+                        <span>History: </span>
+                        <p>Karla Caves, built over two distinct periods, witnessed the first phase from 2nd century BC to the 2nd century AD and
+                        the second from the 5th century AD to the 10th century. The cohesive design of the entire cave, except for three
+                        excavations in the Mahayana phase, reflects a collective effort supported by diverse contributors—merchants, monks,
+                        nuns, and even a Marathi prince. Inscriptions throughout mention individuals from various regions like Vejamti, Sopara,
+                        Umehanakata, and Dhenukakata. Notably, inscriptions reveal land donations to Velluraka Samgha, connecting the ancient
+                        name 'Veluraka' to these generous acts.
+                        </p>
+                    </div>
+                    <div>
+                        <span>More: </span>
+                        <p>Karla Caves boast India's grandest Chaityagriha, measuring 37.87 m deep, 13.87 m wide, and 14.02 m high. Adorned with
+                        intricate carvings, rock-cut columns lead to a stunning semi-circular ceiling supported by wooden arches. The stupa
+                        features a cylindrical drum, cubical 'harmika,' and a seven-step square-base pyramid. Among the 16 rock-cut excavations,
+                        8 are Chaityagrihas, featuring sculptures of males, females, and animals, including a preaching Buddha. Ashokan
+                        pillar-inspired pillars with elephant motifs and a dedicated temple to Goddess Ekvira embellish the cave entrance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--********************************************7***********************************************************-->
+            <div id="10" class="10 desc">
+                <p class="placesHeading"><a href="https://punetourism.co.in/pataleshwar-cave-temple-pune" aria-label="website" target="_blank">10.pataleshwar cave temple</a></p>
+                
+                <div class="topContent">
+                    <img src="./assets/top_10_places/10_pataleshwar.png" alt="place4">
+                    <div class="rightDescription">
+                        <div>
+                            <a class="desc-link" href="http://tinyurl.com/3xwkec62" aria-label="location-link" target="_blank">
+                                <span>Location: </span>
+                                <span>Jangali Maharaj Road, Revenue Colony, Shivajinagar, Pune, Maharashtra, 411005, India.</span>
+                            </a>
+                        </div>
+                        <div>
+                            <span>How to reach: </span>
+                            <span>Via an Auto or Cab</span>
+                        </div>
+                        <div>
+                            <span>Timings: </span>
+                            <span>8:30 A.M - 5:30 P.M.</span>
+                        </div>
+                        <div>
+                            <span>entry fee: </span>
+                            <span>No entry fee</span>
+                        </div>
+                        <div>
+                            <span>Restrictions: </span>
+                            <span>No restrictions</span>
+                        </div>
+                        <div>
+                            <span>Required Time: </span>
+                            <span>1 to 2 hours</span>
+                        </div>
+                        <div>
+                            <span>places nearby: </span>
+                            <span>
+                                <a class="desc-link" href="http://tinyurl.com/2bxybprs" target="_blank">Suryamukhi Shri Gurudatta Mandir</a>,
+                                <a class="desc-link" href="http://tinyurl.com/4h6csbun" target="_blank">Vishraumbaug samaj mandir</a>,
+                                <a class="desc-link" href="http://tinyurl.com/2svvuses" target="_blank">Mahatma Phule Museum</a>,
+                                <a class="desc-link" href="http://tinyurl.com/3z5w4j4s" target="_blank">Vaishali</a> &
+                                <a class="desc-link" href="http://tinyurl.com/4hjjzyck" target="_blank">Roopali</a> restaurants.
+                            </span>
+                        </div>
+                    </div>
+            
+                </div>
+                <div class="belowContent">
+                    <div>
+                        <span>About: </span>
+                        <p>Located on Jangli Maharaj Road in Pune, the Pataleshwar Cave Temple honors Lord Pataleshwar, a form of Lord Shiva.
+                        Carved from a single rock, it stands in the city's heart, drawing devotees daily. With elaborate carvings and miniature
+                        paintings, it's dedicated to Lord Shiva, Nandi, and other deities like Lord Ram, Sita, Lakshmi, Lakshman, and Ganesh.
+                        Inspired by Elephanta Caves, the temple lacks a real entrance and is maintained by the Archaeological Survey of India.
+                        Legend suggests the Pandavas built it swiftly during their exile.</p>
+                    </div>
+                    <div>
+                        <span>History: </span>
+                        <p>Also recognized as Panchaleshwar or Bhamburde, the temple is thought to date back to the Rashtrakuta Period, between the
+                        8th and 9th centuries AD, carved from a monolithic excavation. Inspired by the Elephanta Caves, its architectural
+                        patterns closely resemble those of the Ellora Caves near Aurangabad.
+                        </p>
+                    </div>
+                    <div>
+                        <span>More: </span>
+                        <p>The Pataleshwar Temple, carved from a colossal basalt rock, features massive pillars supporting the roof, housing a
+                        prominent Shivalingam and a Nandi statue. Inside, a stunning rotunda roof and finely crafted pillars lead to the Nandi
+                        Mandapa, dedicated to Lord Shiva's bull. The central section holds a small cave with the Shivalinga, surrounded by
+                        smaller caves containing idols like Lord Ram, Sita, Lakshman, Lakshmi, and Hanuman. The temple also hosts a tiny museum
+                        showcasing a single grain of rice inscribed with 5000 letters, earning it a place in the Guinness Book of Records.</p>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <!--**********************************PUNE DARSHAN***********************************-->
+    <section id="darshan">
+        <p class="heading">Pune darshan</p>
+        <div class="darshanDiv container">
+            <div class="imgDiv">
+                <img src="./assets/pune_darshan/img1.png" alt="busImg1">
+                <img src="./assets/pune_darshan/img2.png" alt="busImg2">
+            </div>
+            <div class="textDiv">
+                <div>
+                    <span class="boldText">Timings:</span>
+                    <span>9:00 AM - 6:00PM</span>
+                </div>
+                <div>
+                    <span class="boldText">Ticket Price:</span>
+                    <span>Rs. 500</span>
+                </div>
+                <div>
+                    <span class="boldText">Bookings:</span>
+                    <ul class="bookings">
+                        <li>Online:
+                            <a class="desc-link" href="https://pmpml.org/pune_darshan" target="_blank">PMPML website</a>,
+                            <a class="desc-link" href="https://www.geodirect.in/pune-darshan-mini-bus-tours" target="_blank">
+                                geodirect.in</a>
+                            or
+                            <a class="desc-link" href="https://www.redbus.in/packages/pune-to-pune-darshan"
+                                target="_blank">redbus.in</a>
+                            (closes at 12.00 am midnight for next day booking)
+                        </li>
+                        <li>Offline: At the boarding points:
+                            <a class="desc-link" href="http://tinyurl.com/3p7kuywv" target="_blank">Pune Station</a> and
+                            <a class="desc-link" href="http://tinyurl.com/5fwykjpz" target="_blank">Deccan</a> (before 8:30 AM)
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <span class="boldText">Destinantions covered:</span>
+                    <ul class="places">
+                        <li>
+                            <a class="desc-link" href="https://punetourism.co.in/kesari-wada-ganpati-pune" target="_blank">
+                                Kesari wada
+                            </a>
+                        </li>
+                        <li>
+                            <a class="desc-link" href="https://punetourism.co.in/shaniwar-wada-pune" target="_blank">
+                                Shaniwar wada
+                            </a>
+                        </li>
+                        <li>
+                            <a class="desc-link" href="https://punetourism.co.in/lal-mahal-pune" target="_blank">
+                                Lalmahal
+                            </a>
+                        </li>
+                        <li>
+                            <a class="desc-link" href="https://punetourism.co.in/shreemant-dagdusheth-halwai-ganpati-mandir-pune"
+                                target="_blank">
+                                Shrimant Dagdusheth Ganpati Mandir(External View)
+                            </a>
+                        </li>
+                        <li>
+                            <a class="desc-link" href="https://punetourism.co.in/aga-khan-palace-pune" target="_blank">
+                                Aga Khan Palace
+                            </a>
+                        </li>
+                        <li>
+                            <a class="desc-link" href="https://punetourism.co.in/tribal-museum-pune" target="_blank">
+                                Tribal Museum
+                            </a>
+                        </li>
+                        <li>
+                            <a class="desc-link" href="https://punetourism.co.in/national-war-memorial-southern-command-pune"
+                                target="_blank">
+                                National War Memorial House Command Area
+                            </a>
+                        </li>
+                        <li>
+                            <a class="desc-link" href="https://punetourism.co.in/shinde-chhatri-pune" target="_blank">
+                                Shinde Chhatri
+                            </a>
+                        </li>
+                        <li>
+                            <a class="desc-link" href="https://punetourism.co.in/rajiv-gandhi-zoological-park-pune" target="_blank">
+                                Rajiv Gandhi Zoo
+                            </a>
+                        </li>
+                        <li>
+                            <a class="desc-link" href="https://punetourism.co.in/saras-ganesh-mandir-sarasbaug-ganpati-temple-pune"
+                                target="_blank">
+                                Sarasbaug Ganpati Temple
+                            </a>
+                        </li>
+                        <li>
+                            <a class="desc-link" href="https://punetourism.co.in/sri-mahalaxmi-temple-pune" target="_blank">
+                                Mahalakshmi Temple(External Darshan)
+                            </a>
+                        </li>
+                        <li>
+                            <a class="desc-link" href="https://punetourism.co.in/pune-okayama-friendship-garden" target="_blank">
+                                P.L. Deshpande Garden
+                            </a>
+                        </li>
+                        <li>
+                            <a class="desc-link" href="https://punetourism.co.in/raja-dinkar-kelkar-museum-pune" target="_blank">
+                                Kelkar Museum
+                            </a>
+                        </li>
+                        <li>
+                            <a class="desc-link"
+                                href="https://yappe.in/maharashtra/pune/dr-babasaheb-ambedkar-museum-memorial/132809"
+                                target="_blank">
+                                Dr. Babasaheb Ambedkar Museum
+                            </a>
+                        </li>
+                        <li>
+                            <a class="desc-link" href="https://punetourism.co.in/chaturshringi-temple-pune" target="_blank">
+                                Chatushrungi Mata Mandir
+                            </a>
+                        </li>
+                        <li>
+                            <a class="desc-link" href="https://punetourism.co.in/iskcon-nvcc-temple-pune" target="_blank">
+                                ISKCON Mandir Kondhwa Road
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p>Pune is a popular tourist destination, known for its scenic beauty and historical landmarks. To enhance the
+                    travel
+                    experience of tourists and promote the cultural heritage of the city, Pune Mahanagar Parivahan Mahamandal Ltd.
+                    (PMPML)
+                    provides a special bus service called 'Pune Darshan'. The service covers 14 tourist spots over a distance of 25
+                    km, and
+                    includes an air-conditioned bus. A tourist guide accompanies the passengers on the bus and at each destination,
+                    providing information about each location.</p>
+                <p>The Pune Darshan bus service has been very well received by tourists, as it provides a comprehensive tour of the
+                    city
+                    with an experienced tour guide. With this initiative, PMPML aims to promote and strengthen the cultural heritage
+                    of
+                    Pune.</p>
+            </div>
+        </div>
+    </section>
+    <!--************************************CONTACT************************************* -->
+    <section id="contact">
+        <div class="container">
+            <p class="heading">contact</p>
+            <p class="subtitle">Have any questions? Don’t hesitate to contact us!</p>
+            <form action="https://public.herotofu.com/v1/b61c9e70-c199-11ee-bb69-515451de93af" method="post" accept-charset="UTF-8">
+                <input type="text" name="name" class="formField" placeholder="Name" id="nameField" required/>
+                <input type="email" name="email" class="formField" placeholder="Email" id="emailField" required/>
+                <textarea rows="4" cols="50" name="message" class="formField" placeholder="Message" id="messageField" required></textarea>
+                
+                <button type="submit" onclick="sendEmail()">
+                    <p>Submit</p>
+                </button>
+            </form>
+        </div>
+    </section>
+    <!--************************************FOOTER***************************************-->
+    <section id="footer">
+        <div class="footerDiv container">
+            <div class="leftDiv">
+                <a href="/"><img src="./assets/logo.svg" alt="logo"></a>
+                <p>Explore pune our way!</p>
+            </div>
+            <div class="centerDivMobile">
+                <div>
+                    <p><a href="#home">Home</a></p>
+                    <p><a href="#contact">Contact</a></p>
+                </div>
+                <div>
+                    <p><a href="#about">About</a></p>
+                    <p><a href="#darshan">Pune darshan</a></p>
+                </div>
+                <p class="centerLink"><a href="#places">Top 10 Places</a></p>
+            </div>
+            <div class="centerDivDesktop">
+                <div>
+                    <p><a href="#home">Home</a></p>
+                    <p><a href="#about">About</a></p>
+                    <p><a href="#contact">Contact</a></p>
+                </div>
+                <div>
+                    <p><a href="#places">Top 10 Places</a></p>
+                    <p><a href="#darshan">Pune darshan</a></p>
+                </div>  
+            </div>
+            <div class="rightDiv">
+                <div>
+                    <a href="mailto:sarvanik60@gmail.com" target="_blank"><img src="./assets/mobile_icons/gmail.svg" alt="gmail-icon"></a>
+                    <a href="https://in.linkedin.com/" target="_blank"><img src="./assets/mobile_icons/linkedIn.svg" alt="linkedIn-icon"></a>
+                    <a href="https://github.com/" target="_blank"><img src="./assets/mobile_icons/github.svg" alt="github-icon"></a>
+                </div>
+                <div>
+                    <a href="/" target="_blank"><img src="./assets/mobile_icons/website.svg" alt="website-icon"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./assets/mobile_icons/instagram.svg" alt="instagram-icon"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyrightsDiv">
+            <p>© Copyrights 2023. All Rights Reserved GhumoPune</p>
+        </div>
+    </section>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
