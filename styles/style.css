@@ -237,7 +237,7 @@ nav ul li a:focus::after, .bottomNavDiv p:hover::after, .bottomNavDiv p:focus::a
 }
 
 #home {
-  background-image: url("../assets/hero/hero_bg.png");
+  background-image: url("../assets/hero/hero_bg.webp");
   height: 92vh;
   padding: 95px 85px;
   position: relative;
